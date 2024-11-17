@@ -12,7 +12,7 @@ Experiment Methodology
    1. Generated synthetic datasets from a ground truth Bayesian network with 15 nodes and controlled complexity.
    2. Systematically varied the percentage of available evidence from 0% to 100%.
    3. Evaluated the structure learning algorithms by calculating the mean squared error (MSE) between predicted and true probability distributions.
-   4. Conducted 100 experimental runs per configuration to ensure statistical validity.
+   4. Conducted 100 stochastic experimental runs per configuration to account for variability.
    5. Analyzed the impact of evidence quantity, network complexity, and dataset size on inference accuracy.
       
 Key Findings
@@ -20,14 +20,11 @@ Key Findings
    2. Network complexity impact: Higher complexity increased the need for more evidence to maintain prediction accuracy.
    3. Dataset size influence: Larger samples consistently reduced mean squared error in Bayesian network predictions.
 
-Methodology
-   1. Generated synthetic datasets from a 15-node ground truth Bayesian network.
-   2. Systematically varied evidence availability from 0% to 100%.
-   3. Calculated mean squared error (MSE) between predicted and true probability distributions.
-   4. Conducted 100 stochastic experimental runs per configuration to account for variability.
-
 Limitations and Future Work
    1. Synthetic data may not capture real-world complexities.
    2. Focused on specific algorithms; other methods could perform differently.
    3. Evaluate algorithms on diverse real-world datasets.
    4. Investigate methods for assessing evidence quality beyond just quantity.
+
+
+Note: The process is stochatic, every run will have different results.
